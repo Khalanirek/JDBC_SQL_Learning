@@ -1,4 +1,4 @@
-package com.khalanirek;
+package com.khalanirek.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -62,7 +62,7 @@ public class DataBaseConection {
             System.setProperty("jdbc.dialect", driverMySQL);
             connection = DriverManager.getConnection(url, username, password);
             connectionStatus = !connection.isClosed();
-            System.out.println("-----  Nawiązano połączenia z " + url);
+            System.out.println("-----  Nawiązano połączenie z " + url);
             return connection;
         }
 
@@ -85,5 +85,4 @@ public class DataBaseConection {
             sql.printStackTrace();
         }
     }
-
 }

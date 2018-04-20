@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.khalanirek.JDBSTests" time="0.159" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.khalanirek.JDBSTests" time="0.197" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\JAVA\jdk1.8.0_161\jre\bin"/>
     <property name="java.vm.version" value="25.161-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="D:\JAVA\Programy\MavenLearning3"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\JAVA\Programy\JDBC_SQL_Learning"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="D:\JAVA\Programy\MavenLearning3"/>
+    <property name="user.dir" value="D:\JAVA\Programy\JDBC_SQL_Learning"/>
     <property name="java.runtime.version" value="1.8.0_161-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="D:\JAVA\jdk1.8.0_161\jre\lib\endorsed"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="D:\JAVA\jdk1.8.0_161\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="pl"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,14 +64,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="connectionToDataBaseTest" classname="com.khalanirek.JDBSTests" time="0.157">
-    <failure message="expected: &lt;true&gt; but was: &lt;false&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
-	at com.khalanirek.JDBSTests.connectionToDataBaseTest(JDBSTests.java:19)
-]]></failure>
-    <system-out><![CDATA[-----  Nawiązywanie połączenia z bazą danych
------  Nie udało się nawiązać połączenia z jdbc:mysql://localhost:3306/nauka
-]]></system-out>
-    <system-err><![CDATA[Sun Apr 08 12:01:55 CEST 2018 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-]]></system-err>
-  </testcase>
+  <testcase name="writeStudentTest" classname="com.khalanirek.JDBSTests" time="0.003"/>
+  <testcase name="connectionToDataBaseTest" classname="com.khalanirek.JDBSTests" time="0.164"/>
+  <testcase name="writeGuardianTest" classname="com.khalanirek.JDBSTests" time="0"/>
+  <testcase name="getGuardianTest" classname="com.khalanirek.JDBSTests" time="0"/>
+  <testcase name="getStudentTest" classname="com.khalanirek.JDBSTests" time="0.028"/>
 </testsuite>

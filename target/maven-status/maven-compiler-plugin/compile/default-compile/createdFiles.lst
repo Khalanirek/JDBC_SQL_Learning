@@ -1,2 +1,6 @@
+com\khalanirek\database\DataBaseConection.class
+com\khalanirek\domain\Person.class
+com\khalanirek\domain\Guardian.class
+com\khalanirek\database\DataBaseManager.class
 com\khalanirek\App.class
-com\khalanirek\DataBaseConection.class
+com\khalanirek\domain\Student.class

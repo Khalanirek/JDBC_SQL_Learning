@@ -1,8 +1,9 @@
 package com.khalanirek;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import com.khalanirek.database.DataBaseConection;
+import com.khalanirek.database.DataBaseManager;
+import com.khalanirek.database.database_Implementation.DataBaseManagerImp;
+
 import java.sql.*;
 
 /**
@@ -14,6 +15,7 @@ public class App
 
     public static void main( String[] args )
     {
+        /*
         //Nawiązywanie połączenia z bazą danych
         DataBaseConection dataBaseConection = new DataBaseConection();
         dataBaseConection.setDriverMySQL("com.mysql.cj.jdbc.Driver");
@@ -40,6 +42,8 @@ public class App
 
         //Zamknięcie połączenia z bazą danych
         dataBaseConection.closeConnectionToDataBase();
-
+*/
+        DataBaseManager dataBaseManager = new DataBaseManagerImp();
+        dataBaseManager.getStudent(2);
     }
 }
